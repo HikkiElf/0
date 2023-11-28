@@ -1,0 +1,31 @@
+﻿<Window x:Class="zoostore.Windows.ClientManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zoostore.Windows"
+        mc:Ignorable="d"
+        Title="ClientManagerWindow" MinHeight="800" MinWidth="1080" ResizeMode="NoResize" Icon="E:\College projects\DEMO ZOOSTORE\zoostore\zooStore\zoostore\Utils\icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="695*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="ProductView" AutoGenerateColumns="True" SelectionUnit="FullRow" Margin="0,15,0,0" Grid.Row="1" FontFamily="Comic Sans MS">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+
+        <ComboBox Name="PriceSortComboBox" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="130" SelectionChanged="PriceSortComboBox_SelectionChanged" FontFamily="Comic Sans MS" />
+        <Label Content="Сортировка по цене" HorizontalAlignment="Left" Margin="9,21,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Width="131"/>
+        <ComboBox Name="CategorySortComboBox" HorizontalAlignment="Left" Margin="193,57,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="CategorySortComboBox_SelectionChanged" FontFamily="Comic Sans MS"/>
+        <Label Content="Сортировка по категориям" HorizontalAlignment="Left" Margin="193,21,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+        <TextBox Name="TextBoxSearch"  HorizontalAlignment="Left" Margin="384,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Height="22" TextChanged="TextBoxSearch_TextChanged" FontFamily="Comic Sans MS"/>
+        <Label Content="Поиск по названию и описанию" HorizontalAlignment="Left" Margin="384,21,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+        <Button Name="AddRowButton" Content="Добавить запись" HorizontalAlignment="Left" Margin="786,57,0,0" VerticalAlignment="Top" Height="23" Width="143" FontFamily="Comic Sans MS" Click="AddRowButton_Click" Visibility="Hidden"/>
+        <Label Name="UserFullNameLabel" Content="" HorizontalAlignment="Left" Margin="839,10,0,0" VerticalAlignment="Top" Width="231"/>
+    </Grid>
+</Window>

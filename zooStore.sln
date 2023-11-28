@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zoostore", "zoostore\zoostore.csproj", "{73DCCE3A-2E0D-435F-91CA-A2D2A1CB83CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zooStore.Tests", "zooStore.Tests\zooStore.Tests.csproj", "{23205BA1-E012-49F2-B1C6-D4EF22C5F12C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73DCCE3A-2E0D-435F-91CA-A2D2A1CB83CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DCCE3A-2E0D-435F-91CA-A2D2A1CB83CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DCCE3A-2E0D-435F-91CA-A2D2A1CB83CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DCCE3A-2E0D-435F-91CA-A2D2A1CB83CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23205BA1-E012-49F2-B1C6-D4EF22C5F12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23205BA1-E012-49F2-B1C6-D4EF22C5F12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23205BA1-E012-49F2-B1C6-D4EF22C5F12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23205BA1-E012-49F2-B1C6-D4EF22C5F12C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1524B311-6421-401B-9F32-3F77A97706C4}
+	EndGlobalSection
+EndGlobal
